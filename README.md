@@ -1,5 +1,7 @@
 # BunyanSourceRemoteReader
 
+<!-- bunyan_header -->
+
 The RemoteReader is a component of the [Bunyan logging system][bunyan].
 Use it in conjunction with one or more remote writers to provide
 distributed logging.

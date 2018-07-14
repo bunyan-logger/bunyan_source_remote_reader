@@ -1,9 +1,7 @@
 defmodule Bunyan.Source.RemoteReader do
 
-  use Bunyan.Shared.Readable
+  use Bunyan.Shared.Readable, server_name: Bunyan.Source.RemoteReader.Server
 
-  def start(config) do
-
-  end
+  # no callable API...
 
 end
