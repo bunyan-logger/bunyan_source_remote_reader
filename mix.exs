@@ -9,7 +9,6 @@ defmodule BunyanSourceRemoteReader.MixProject do
   def project() do
     Build.project(
       :bunyan_source_remote_reader,
-      "0.5.0",
       &deps/1,
       "Let this node act as the target for a remote logger in the Bunyan distributed and pluggable logging system"
     )
