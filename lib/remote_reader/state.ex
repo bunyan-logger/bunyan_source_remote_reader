@@ -5,7 +5,15 @@ defmodule Bunyan.Source.RemoteReader.State do
     global_name:  nil
   )
 
+  @required_options [
+    :global_name
+  ]
+
   def from(options) do
+    import Bunyan.Shared.Options
+
+    validate_required_options(options, @required_options, Bunyan.Source.RemoteReader)
+
     %__MODULE__{}
     |> add_global_name(options[:global_name])
   end
